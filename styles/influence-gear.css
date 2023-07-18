@@ -1,0 +1,14 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+/* reset default styes  */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* shared styles  */
+body{
+    font-family: 'Poppins', sans-serif;
+}
