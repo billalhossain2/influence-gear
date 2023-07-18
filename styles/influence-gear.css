@@ -177,6 +177,62 @@ nav > a {
   max-width: 196px;
 }
 
+.see-more-button-container {
+  text-align: right;
+  padding: 10px 0;
+  margin-bottom: 100px;
+}
+.see-more-button-container button {
+  margin-right: 200px;
+  color: rgba(224, 44, 109, 0.87);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* ==============feature styles==========  */
+.feature {
+  margin: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+  margin-bottom: 100px;
+}
+.feature-image {
+  width: 100%;
+  height: auto;
+}
+.feature-content {
+}
+.feature-title {
+  color: #0a0826;
+  font-size: 30px;
+  font-weight: 700;
+}
+.feature-description {
+  color: #6c6c6c;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+  margin: 16px 0;
+}
+.feature-button {
+  background: #e02c6d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border:0;
+  padding:8px 16px;
+}
+
+
+
 /* Responsive Styles  */
 @media screen and (max-width: 576px) {
   header div.mobile-area {
@@ -252,14 +308,30 @@ nav > a {
   .popular-collections-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 44px;
+    gap: 32px;
   }
 
   .popular-collection-item-title {
     font-weight: 700;
   }
 
-  .popular-collection-item-price{
+  .popular-collection-item-price {
     font-weight: 700;
+  }
+
+  .see-more-button-container button {
+    margin-right: 10px;
+  }
+
+  /* feature  */
+  .feature {
+    margin: 0 10px;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap:40px;
+  }
+
+  .feature-title{
+    font-size: 24px;
   }
 }
