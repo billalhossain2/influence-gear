@@ -95,6 +95,28 @@ nav > a {
     width:100%;
 }
 
+/* brand section styles  */
+.brands{
+    margin:0 200px;
+    margin-bottom: 140px;
+}
+.brands-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive Styles  */
 @media screen and (max-width: 576px) {
   header div.mobile-area{
