@@ -1,14 +1,92 @@
 /* google fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
 
 /* reset default styes  */
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* shared styles  */
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===========header styles==========  */
+/* nav styles  */
+nav {
+  margin: 87px 120px 80px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 34px;
+}
+
+.nav-title {
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav > a{
+    text-decoration: none;
+    color:#000;
+}
+
+.mobileIcon{
+    display: none;
+    color:#000;
+}
+
+/* banner styles  */
+.banner{}
+.banner-content{}
+.banner-title{}
+.banner-description{}
+.banner-button{}
+.banner-image-container{}
+.banner-image-container img{}
+
+
+
+
+
+
+/* Responsive Styles  */
+@media screen and (max-width:576px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    nav{
+        margin: 35px 16px 35px 16px;
+    }
+
+    .nav-title{
+        font-size: 16px;
+    }
+
+    .mobileIcon{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+        gap:20px;
+    }
 }
