@@ -13,7 +13,16 @@
 <body>
     <header>
         <div class="mobile-area">
-            <a href=""><i class="fa-solid fa-bars mobileIcon"></i></i></a>
+            <div class="menu">
+                <i id="threeBarsIcon" class="fa-solid fa-bars mobileIcon"></i>
+                <ul id="mobile-menu" class="mobile-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Sign up</a></li>
+                    <li><a href="">Log in</a></li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </div>
         <nav>
             <h3 class="nav-title">Influencer products</h3>
             <ul>
@@ -220,5 +229,21 @@
             <a href=""><i class="fa-brands fa-youtube"></i></a>
         </div>
     </footer>
+
+    <script>
+        const threeBarsIcon = document.getElementById("threeBarsIcon")
+        const mobileMenu = document.getElementById("mobile-menu")
+
+        threeBarsIcon.addEventListener('click', ()=>{
+            console.log(mobileMenu.style)
+            if(!mobileMenu.style.left){
+                mobileMenu.style.left = "0px";
+            }else if(mobileMenu.style.left === "-5000px"){
+                mobileMenu.style.left = "0px";
+            }else{
+                mobileMenu.style.left = "-5000px";
+            }
+        })
+    </script>
 </body>
 </html>
