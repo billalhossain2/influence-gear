@@ -105,6 +105,10 @@ nav > a {
     justify-content: space-between;
 }
 
+.brands-container img{
+    width:100%;
+    height: auto;
+}
 
 
 
@@ -166,4 +170,17 @@ nav > a {
   .banner-description{
     margin: 15px 0 25px 0;
   }
+
+  /* brands  */
+  .brands{
+    margin:0;
+    margin-bottom: 140px;
+}
+.brands-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap:30px;
+    padding:0 10px;
+}
 }
